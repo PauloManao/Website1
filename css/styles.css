@@ -22,13 +22,14 @@ font-family: 'Open Sans', sans-serif;
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body{
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
     color: var(--primary-color);
-
+    line-height: 1.5;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -69,6 +70,7 @@ h6{
 
 .white-bg{
     background: var(--white-color);
+    color: var(--primary-color);
 }
 
 .main-content{
@@ -88,6 +90,7 @@ h6{
     left: 0;
     right: 0;
     border-bottom: 0.1rem solid var(--light-gray-color);
+    z-index: 1;
 }
 .menu h1{
     font-size: 2.3rem;
@@ -130,3 +133,54 @@ h6{
     width: 50%;
     left: 25%;
 }
+.menu-spacing{
+    height: 65px;
+}
+
+.intro-content{
+    position: relative;
+    top: -7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+    height: 100vh;
+}
+
+.intro-text-content, .intro-img{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.intro-text-content h2{
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    line-height: 1.2;
+}
+
+.intro-img img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.updates{
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: 80rem;
+}
+
+p{
+    margin-bottom: 3rem;
+}
+
+.grid-top3-one{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+}
+
+
