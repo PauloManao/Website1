@@ -76,8 +76,8 @@ h6{
 .main-content{
     max-width: 120rem;
     margin: 0 auto;
-    padding: var(--gap);
-    align-items: center;
+    padding: 6rem var(--gap);
+    align-items: center; 
 }
 
 .section{
@@ -143,7 +143,7 @@ h6{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--gap);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .intro-text-content, .intro-img{
@@ -167,9 +167,12 @@ h6{
 .updates{
     height: 100vh;
     display: flex;
-    flex-flow: row wrap;
+    /*flex-flow: row wrap;*/
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
     max-width: 80rem;
+   
 }
 
 p{
@@ -181,6 +184,53 @@ p{
     flex-flow: column wrap;
     justify-content: center;
     height: 100vh;
+    
 }
 
+.grid-top3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+}
 
+.grid-top3 h3{
+    font-size: 3rem;
+    position: relative;
+    padding-left: 7rem;
+    padding-bottom: 2rem;
+}
+
+.grid-top3 h3::before{
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 7rem;
+    font-style: italic;
+    top: -3rem;
+    left: 0;
+    transform: rotate(5deg);
+}
+
+.grid-top3{
+    margin-bottom: 1rem;
+}
+
+.grid-description{
+    padding-bottom: 7rem;
+}
+
+.gallery-img{
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+
+.gallery-img{
+    transition: all 300ms ease-in-out;
+}
+
+.gallery-img{
+    transform: ;
+}
