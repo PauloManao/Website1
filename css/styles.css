@@ -43,6 +43,9 @@ h1{
 
 h2{
     font-size: 5.5rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
 }
 
 h3{
@@ -91,6 +94,7 @@ h6{
     right: 0;
     border-bottom: 0.1rem solid var(--light-gray-color);
     z-index: 1;
+    width: 100%;
 }
 .menu h1{
     font-size: 2.3rem;
@@ -105,6 +109,7 @@ h6{
     justify-content: space-between;
     padding-top: 0;
     padding-bottom: 0;
+    align-items: center;
 }
 
 .menu ul{
@@ -116,6 +121,7 @@ h6{
     padding: 2rem;
     font-size: 1.8rem;
     position: relative;
+    color: var(--primary-color);
 }
 
 .menu ul li a::after{
@@ -133,6 +139,7 @@ h6{
     width: 50%;
     left: 25%;
 }
+
 .menu-spacing{
     height: 65px;
 }
@@ -141,7 +148,7 @@ h6{
     position: relative;
     top: -7rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
     min-height: 100vh;
 }
@@ -158,7 +165,7 @@ h6{
     line-height: 1.2;
 }
 
-.intro-img img {
+.intro-img img{
     max-width: 100%;
     height: auto;
     
@@ -167,11 +174,11 @@ h6{
 .updates{
     height: 100vh;
     display: flex;
-    /*flex-flow: row wrap;*/
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     max-width: 80rem;
+    text-align: center;
    
 }
 
@@ -183,7 +190,7 @@ p{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     
 }
 
@@ -217,7 +224,7 @@ p{
 }
 
 .grid-description{
-    padding-bottom: 7rem;
+    padding-bottom: 5rem;
 }
 
 .gallery-img{
@@ -231,6 +238,36 @@ p{
     transition: all 300ms ease-in-out;
 }
 
-.gallery-img{
-    transform: ;
+.gallery-img img:hover{
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.responsive-table{
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+table caption{
+    font-style: italic;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+table td, table th{
+    white-space: nowrap;
+    padding: 0.5rem;
+    border: 0.1rem solid var(--light-gray-color) ;
+}
+
+tfoot td, table th{
+    background: var(--light-gray-color);
+    color: var(--primary-color);
 }
