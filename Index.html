@@ -17,7 +17,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 	
-<body class="main-bg">
+<body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
             <h1><a href="#">LOGO</a></h1>
@@ -28,7 +30,7 @@
                     <li><a href="#top3">Top 3</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#properties">Properties</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </UL>
             </nav>
         </div>
@@ -201,6 +203,8 @@
                     </tbody>
                     <tfoot>
                         <tr>
+                            <td></td>
+                            <td></td>
                             <td colspan="3">Testing</td>
                         </tr>
                     </tfoot> 
@@ -208,6 +212,40 @@
             </div>
         </div>
     </section>
+
+    <section id="contact" class="intro white-bg section">
+        <div class="main-content intro-content">
+            <div class="contact-form">
+               <fieldset class="form-grid">
+                    <legend>Contact us</legend>
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Your first name">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Your last name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-group message-field">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Send Message</button>
+                    </div>
+               </fieldset>
+ 
+            </div>
+        </div>
+    </section>
+
+    <footer id="madeby-footer" class="madeby-footer main-bg">
+        <p><a href="https://www.linkedin.com/in/pauloribeirogjr/" target="_blank">by Paulo Ribeiro</a></p>
+    </footer>
 
 </body>
 </html>
