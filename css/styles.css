@@ -346,6 +346,26 @@ body .message-field{
     padding: 1rem;
 }
 
+.close-menu{
+    display: none;
+}
+
+.back-to-top{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--white-color);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--primary-color);
+    transform: rotate(-90deg);
+    border: 0.1rem solid var(--primary-color);
+}
+
 @media (max-width: 800px) {
     .intro-content, .grid-top3{
         grid-template-columns: 1fr;
@@ -369,13 +389,6 @@ body .message-field{
         display: none;
     }
 
-    .close-menu{
-        position: fixed;
-        z-index: 2;
-        top: 0;
-        left: 0;
-    }
-
     .close-menu-label::after{
         content: '☰';
         position: fixed;
@@ -390,6 +403,19 @@ body .message-field{
         height: 3rem;
         text-align: center;
         padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.menu{
+        display: block;
+    } 
+
+    .close-menu:checked~.close-menu-label::after{
+        content: '×';
+    }
+    
+    .menu-spacing{
+        display: none;
     }
 
 }
