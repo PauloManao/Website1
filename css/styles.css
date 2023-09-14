@@ -33,6 +33,7 @@ body{
     line-height: 1.5;
 }
 
+
 h1,h2,h3,h4,h5,h6{
     font-family: 'Montserrat', sans-serif;    
 }
@@ -179,8 +180,7 @@ h6{
     flex-wrap: nowrap;
     justify-content: center;
     max-width: 80rem;
-    text-align: center;
-   
+    text-align: center; 
 }
 
 p{
