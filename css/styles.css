@@ -245,16 +245,17 @@ p{
 
 }
 
-table{
-    width: 100%;
-    border-collapse: collapse;
-    min-width: 800px;
-}
-
 .responsive-table{
     overflow: hidden;
     overflow-x: auto;
 }
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 360px;
+}
+
 
 table caption{
     font-style: italic;
