@@ -419,5 +419,9 @@ body .message-field{
         display: none;
     }
 
+    table th{
+        font-size: 1.4rem;
+    }
+
 }
 
