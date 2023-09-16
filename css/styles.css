@@ -167,7 +167,7 @@ h6{
     line-height: 1.2;
 }
 
-.intro-img img{
+.intro-img img, .solar-shooting img{
     max-width: 100%;
     height: auto;
     
